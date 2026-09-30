@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - AI System Admin</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; background: #0d0d1a; color: #e8e8e8; line-height: 1.7; }
+        h1 { color: #4ecdc4; border-bottom: 2px solid #1a1a2e; padding-bottom: 10px; }
+        h2 { color: #4ecdc4; margin-top: 30px; }
+        a { color: #4ecdc4; }
+        .highlight { background: #1a1a2e; padding: 15px; border-radius: 8px; margin: 15px 0; border-left: 3px solid #4ecdc4; }
+        .date { color: #8892b0; font-size: 14px; }
+    </style>
+</head>
+<body>
+    <h1>🖥️ AI System Admin — Privacy Policy</h1>
+    <p class="date">Effective Date: May 2, 2026</p>
+
+    <div class="highlight">
+        <strong>Summary:</strong> AI System Admin connects to YOUR servers using credentials YOU provide. Server credentials are stored locally on your device. AI diagnostics are processed through your own configured API endpoint. We do not collect, store, or transmit any of your data to our servers.
+    </div>
+
+    <h2>1. Information We Collect</h2>
+    <p><strong>None.</strong> AI System Admin does not collect any personal data or usage analytics. All data stays on your device and your own infrastructure.</p>
+
+    <h2>2. Data Stored on Your Device</h2>
+    <p>The following data is stored locally on your device using an encrypted local database:</p>
+    <ul>
+        <li><strong>Server credentials</strong> — hostnames, IP addresses, ports, usernames, passwords, and SSH keys you configure</li>
+        <li><strong>Command logs</strong> — history of commands executed on your servers</li>
+        <li><strong>API configuration</strong> — your AI provider API key and endpoint URL</li>
+        <li><strong>App preferences</strong> — settings such as check intervals and auto-fix toggles</li>
+    </ul>
+    <p>This data:</p>
+    <ul>
+        <li>Never leaves your device except to connect to servers and APIs <strong>you</strong> configure</li>
+        <li>Is not accessible to us or any third party</li>
+        <li>Is deleted when you uninstall the app</li>
+    </ul>
+
+    <h2>3. Network Connections</h2>
+    <p>AI System Admin makes the following network connections, all initiated by you:</p>
+    <ul>
+        <li><strong>SSH connections</strong> — to servers you add, using credentials you provide. Connections are made directly from your device to your servers.</li>
+        <li><strong>AI API calls</strong> — diagnostic data (server stats like CPU/RAM/disk usage) is sent to your configured AI endpoint for analysis. By default, this is your own Evia API instance. We do not operate this endpoint.</li>
+    </ul>
+    <div class="highlight">
+        <strong>Important:</strong> The app connects ONLY to servers and API endpoints that YOU configure. We do not operate any backend servers and have no access to your connections.
+    </div>
+
+    <h2>4. SSH Security</h2>
+    <p>SSH credentials (passwords and private keys) are stored in the app's local database on your device. We recommend:</p>
+    <ul>
+        <li>Using SSH key authentication instead of passwords where possible</li>
+        <li>Using dedicated service accounts with limited permissions for AI System Admin</li>
+        <li>Enabling device lock screen protection</li>
+    </ul>
+
+    <h2>5. AI Diagnostics</h2>
+    <p>When you use the AI Diagnose feature, the app sends server statistics (CPU usage, RAM usage, disk usage, uptime, OS info) to your configured AI API endpoint. This data:</p>
+    <ul>
+        <li>Is sent only when you explicitly tap the "AI Diagnose" button (or enable auto-check)</li>
+        <li>Goes to YOUR API endpoint, not ours</li>
+        <li>Does not include passwords, SSH keys, or other credentials</li>
+    </ul>
+
+    <h2>6. Third-Party Services</h2>
+    <p>AI System Admin does not integrate any third-party analytics, advertising, or tracking SDKs. The only external connections are those you explicitly configure (your SSH servers and your AI API endpoint).</p>
+
+    <h2>7. Auto-Fix Feature</h2>
+    <p>If enabled, the auto-fix feature allows the AI to automatically execute commands on your servers to resolve detected issues. This feature is disabled by default and requires explicit opt-in with a confirmation dialog. You are responsible for the commands executed on your servers.</p>
+
+    <h2>8. Children's Privacy</h2>
+    <p>This app is not directed at children under 13. It is a professional system administration tool.</p>
+
+    <h2>9. Changes to This Policy</h2>
+    <p>If we update this privacy policy, the changes will be posted on this page with an updated effective date.</p>
+
+    <h2>10. Contact</h2>
+    <p>If you have questions about this privacy policy, contact us at:</p>
+    <p>📧 <a href="mailto:htc228@gmail.com">htc228@gmail.com</a></p>
+
+    <hr style="border-color: #1a1a2e; margin-top: 40px;">
+    <p class="date">App: AI System Admin<br>
+    Package: com.aisysadmin2<br>
+    Developer: Victor C.</p>
+</body>
+</html>
